@@ -64,22 +64,24 @@
                 </div>
             </div>
         </div>
-
+<!-- removing laravel pagination and instead have added via jquery
         <div class="d-flex">
             <div class="mx-auto">
-        {{$posts->links()}}
+        //$posts->links()  //put curly brackets around
             </div>
         </div>
-
+-->
     @endsection
 
-    @section('scripts')
+        @section('scripts')
         <!-- Page level plugins -->
             <script src="{{asset('vendor/datatables/jquery.dataTables.min.js')}}"></script>
             <script src="{{asset('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
 
-            <!-- Page level custom scripts
-            <script src="{{asset('js/demo/datatables-demo.js')}}"></script>-->
+            <!-- Page level custom scripts-->
+            <script src="{{asset('js/demo/datatables-demo.js')}}"></script>
         @endsection
+
+
 
 </x-admin-master>
